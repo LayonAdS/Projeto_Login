@@ -16,4 +16,8 @@ var dadoslista = [];
 
 function salvarUser(){
   let nomeUser = document.getElementById('nomeUser').value;  
+
+  if(nomeUser){
+    dadoslista.push(nomeUser);
+  }
 }

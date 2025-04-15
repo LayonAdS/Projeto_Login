@@ -19,5 +19,7 @@ function salvarUser(){
 
   if(nomeUser){
     dadoslista.push(nomeUser);
+    console.log(dadoslista);
+    document.getElementById('nomeUser').value = "";
   }
 }

@@ -11,3 +11,9 @@ function acessar(){
 
 
 }
+// criando um array sem numero definido
+var dadoslista = [];
+
+function salvarUser(){
+  let nomeUser = document.getElementById('nomeUser').value;  
+}

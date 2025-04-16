@@ -40,15 +40,26 @@ function criaLista(){
     }
 }
 
-// função ára excluir nome da lista
+// função para excluir nome da lista
 function excluir(i){
     dadoslista.splice((i-1), 1);
     document.getElementById('tabela').deleteRow(i);
     console.log(dadoslista);
 }
 
+// função para editar nome na lista
 function editar(i){
     document.getElementById('nomeUser').value = dadoslista[(i -1)];
     dadoslista.splice(dadoslista[(i-1)],1);
 
+}
+
+window.onload = function(){
+document.getElementById('nomeUser').addEventListener("keypress", function(event){
+    if(event.key === "Enter"){
+        
+        event.preventDefault();
+        salvarUser();
+    }
+});
 }
